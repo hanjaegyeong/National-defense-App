@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckBoxActivity">
+
+    <ImageView
+        android:id="@+id/backgroundcheck"
+        android:layout_width="385dp"
+        android:layout_height="700dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/text_checklist"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/text_checklist"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/background_mid_4" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="353dp"
+        android:layout_height="569dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundcheck"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/backgroundcheck"
+        app:layout_constraintTop_toTopOf="@+id/backgroundcheck"
+        app:layout_constraintVertical_bias="0.32">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Q11"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Q1. 현재 몸에 발열이 있습니까? "
+                android:textColor="#070065"
+                android:textSize="15dp" />
+
+
+            <CheckBox
+                android:id="@+id/A11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아니오 (37.5도 미만)"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/A12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="예 (37.5도 이상)"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textenter1"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" "
+                android:textColor="#070065"
+                android:textSize="5dp" />
+
+
+            <TextView
+                android:id="@+id/Q21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q2. “본인” 또는 “동거인“이 방역당국으로부터 확진 통보를 받은지 7일 이내입니까? "
+                android:textColor="#070065"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/A21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아니오"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/A22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="예 "
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textenter2"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" "
+                android:textColor="#070065"
+                android:textSize="5dp" />
+
+            <TextView
+                android:id="@+id/Q31"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Q3. 동거인이 방역당국으로부터 확진통보를 받았습니까?"
+                android:textColor="#070065"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/A31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아니오 "
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/A32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="예 "
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textenter3"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" "
+                android:textColor="#070065"
+                android:textSize="5dp" />
+
+            <TextView
+                android:id="@+id/Q41"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Q4. ”본인“이 확진자와 밀접접촉한지 7일 이내입니까? \n ※ 밀접접촉 기준 : 확진자와 동일공간에서 마스크를 벗고 20분 내외 식사 또는 대화 등"
+                android:textColor="#070065"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/A41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아니오"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/A42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="예"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textenter4"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" "
+                android:textColor="#070065"
+                android:textSize="5dp" />
+
+            <TextView
+                android:id="@+id/Q51"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Q5. 자가진단키트 또는 신속항원검사 결과가 양성인가요?"
+                android:textColor="#070065"
+                android:textSize="15dp" />
+
+
+            <CheckBox
+                android:id="@+id/A51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아니오"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/A52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="예"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textenter5"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" "
+                android:textColor="#070065"
+                android:textSize="5dp" />
+
+            <TextView
+                android:id="@+id/Q61"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Q6. 현재 코로나19에 해당하는 증상이 있습니까? \n (증상이 있는 경우 복수 선택 가능. 단, 기저질환 등으로 코로나19에 관계없이 증상이 있는 경우는 제외)"
+                android:textColor="#070065"
+                android:textSize="15dp" />
+
+
+            <CheckBox
+                android:id="@+id/A61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아니오"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/A62"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="기침"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/A63"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="호흡곤란"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/A64"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="오한"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/A65"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="근육통"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/A66"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="두통"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/A67"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="인후통"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/A68"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="후각 및 미각 손실"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btncomplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#070065"
+                android:text="전송"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/text_checklist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[ 코로나 19 ]  자가진단"
+        android:textColor="#070065"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <ImageView
+        android:id="@+id/check_logo"
+        android:layout_width="56dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/backgroundcheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toEndOf="@+id/text_checklist"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#070065"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.979" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
